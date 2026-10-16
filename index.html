@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joannes Benedict Ocmer — Animator and Digital Artist Portfolio">
+  <title>Joannes Benedict Ocmer | Animator & Digital Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">JO<span>.</span></a>
+    <nav id="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-button" href="#contact">Let's Talk <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot"></span> AVAILABLE FOR CREATIVE WORK</p>
+        <h1>Animator.<br><em>Digital Artist.</em><br>Storyteller.</h1>
+        <p class="hero-text">I create expressive animation, characters, and digital artwork that turn ideas into memorable visual stories.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore My Work <span>↓</span></a>
+          <a class="button secondary" href="#about">About Me</a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="art-frame">
+          <div class="art-label">SELECTED<br>FRAME / 01</div>
+          <video class="art-video" src="images/video/act%202%20scene%2017.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Act 2, scene 17 animation"></video>
+          <div class="frame-caption">ACT 2 / SCENE 17</div>
+        </div>
+        <div class="scribble">create<br>something<br>alive ↘</div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Skills">
+      <div class="marquee-track">
+        <span>2D ANIMATION</span><b>✦</b><span>CHARACTER DESIGN</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>STORYTELLING</span><b>✦</b>
+        <span>2D ANIMATION</span><b>✦</b><span>CHARACTER DESIGN</span><b>✦</b><span>DIGITAL ART</span><b>✦</b><span>STORYTELLING</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">01 / SELECTED WORK</p><h2>Projects that<br><em>move.</em></h2></div>
+        <p class="section-note">A selection of animation, illustration, and visual storytelling projects. Replace the placeholders with your actual work.</p>
+      </div>
+
+      <div class="featured-project reveal">
+        <div class="project-visual project-river">
+          <video class="river-preview" muted autoplay playsinline preload="auto" aria-label="Ang Awit ng mga Nalunod video preview"></video>
+          <div class="project-dim" aria-hidden="true"></div>
+          <div class="river-title">ANG AWIT<br><span>NG MGA</span><br>NALUNOD</div>
+          <div class="project-number">01</div>
+        </div>
+        <div class="project-info">
+          <p class="eyebrow">CAPSTONE PROJECT · 2025–26</p>
+          <h3>Ang Awit ng mga Nalunod</h3>
+          <p>A fantasy-drama animated short about Nico, a boy who discovers hidden truths through supernatural encounters connected to a river and the spirits of children.</p>
+          <div class="chips"><span>2D Animation</span><span>Character Performance</span><span>Storytelling</span><span>After Effects</span></div>
+          <button class="text-link" onclick="openModal('river')">View Project <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="card-art art-portrait"><div class="card-number">02</div><img class="card-media" src="images/mc%20niko.jpg" alt="Nico character sheet"></div>
+          <div class="card-body"><p>CHARACTER ART</p><h3>Character Explorations</h3><button class="text-link" onclick="openModal('characters')">View Work ↗</button></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="card-art art-storyboard"><div class="card-number">03</div><video class="card-media" src="images/video/rainy%20escape.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Rainy Escape storyboard preview"></video><div class="boards storyboard-fallback" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+          <div class="card-body"><p>PRE-PRODUCTION</p><h3>Storyboards & Layouts</h3><button class="text-link" onclick="openModal('boards')">View Work ↗</button></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="card-art art-illustration"><div class="card-number">04</div><img class="card-media" src="images/altventurer.png" alt="Altventurer illustration"></div>
+          <div class="card-body"><p>DIGITAL ART</p><h3>Illustration Collection</h3><button class="text-link" onclick="openModal('art')">View Work ↗</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-visual reveal">
+        <div class="about-card">
+          <div class="about-mark">JO</div>
+          <p>ANIMATOR<br>& DIGITAL ARTIST</p>
+          <div class="about-lines"></div>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">02 / ABOUT ME</p>
+        <h2>Making ideas<br>feel <em>alive.</em></h2>
+        <p>I'm Joannes Benedict Ocmer, an animator and digital artist focused on 2D animation, character performance, illustration, and visual storytelling.</p>
+        <p>I enjoy combining strong staging, expressive poses, timing, color, and atmosphere to create visuals that communicate more than words alone.</p>
+        <div class="facts">
+          <div><strong>2D</strong><span>Animation</span></div>
+          <div><strong>∞</strong><span>Ideas</span></div>
+          <div><strong>12</strong><span>Principles</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">03 / TOOLKIT</p><h2>Skills & <em>tools.</em></h2></div>
+      </div>
+      <div class="skills-list">
+        <div class="skill reveal"><span>01</span><h3>2D Animation</h3><p>Character animation, posing, timing, spacing, acting, and application of the 12 principles.</p><b>★★★★☆</b></div>
+        <div class="skill reveal"><span>02</span><h3>Digital Illustration</h3><p>Character concepts, environment art, composition, visual development, and stylized artwork.</p><b>★★★★☆</b></div>
+        <div class="skill reveal"><span>03</span><h3>Adobe Animate</h3><p>2D production, character performance, scene animation, and asset organization.</p><b>★★★★☆</b></div>
+        <div class="skill reveal"><span>04</span><h3>After Effects</h3><p>Post-production, lighting, compositing, effects, and final visual polish.</p><b>★★★☆☆</b></div>
+        <div class="skill reveal"><span>05</span><h3>Blender</h3><p>3D layout, composition, camera planning, reference, and scene blocking.</p><b>★★★☆☆</b></div>
+        <div class="skill reveal"><span>06</span><h3>Visual Storytelling</h3><p>Staging, pacing, color contrast, storyboards, and communicating emotion visually.</p><b>★★★★☆</b></div>
+      </div>
+    </section>
+
+    <section class="section resume-section">
+      <div class="resume-box reveal">
+        <div><p class="eyebrow">04 / EXPERIENCE</p><h2>Want the full<br><em>picture?</em></h2></div>
+        <div><p>Download my resume for education, project experience, technical skills, and other creative work.</p><a class="button primary" href="resume.pdf" download>Download Resume ↓</a></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">05 / CONTACT</p>
+        <h2>Let's make<br>something <em>move.</em></h2>
+        <p>Have a project, collaboration, or creative opportunity? I'd love to hear from you.</p>
+        <a class="email" href="mailto:joannesbenedictocmer@gmail.com">joannesbenedictocmer@gmail.com <span>↗</span></a>
+        <div class="socials">
+          <a href="https://www.instagram.com/joanzu_/" aria-label="Instagram">Instagram ↗</a>
+          <a href="https://www.artstation.com/dunkinbin" aria-label="ArtStation">ArtStation ↗</a>
+          <a href="https://www.linkedin.com/in/joannes-benedict-ocmer-7172b1433/" aria-label="LinkedIn">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Joannes Benedict Ocmer</span><span>Animator · Digital Artist</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <p class="eyebrow" id="modal-label"></p><h2 id="modal-title"></h2><p id="modal-text"></p>
+      <div class="modal-gallery" id="modal-art" aria-label="Project artwork"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
